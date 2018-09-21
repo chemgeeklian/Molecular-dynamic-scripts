@@ -6,6 +6,7 @@ By chemgeeklian, 2018/9/19
 """
 import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import, error if not imported
 
 class randwalk:
     def __init__(self,dim,norm,iteration):
