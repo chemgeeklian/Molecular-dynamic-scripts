@@ -23,7 +23,7 @@ class randwalk:
        sins=np.sin(phai[0])
        for i in range(1,dimension-1):
            direction[i]=sins*np.cos(phai[i])
-           sins=sins*np.sin(phai[i-1])
+           sins=sins*np.sin(phai[i])
        direction[-1]=sins
        return(distance*direction)
 
@@ -33,6 +33,8 @@ track=np.zeros([setpara.i,setpara.d]) #start from original point
 for num in range(setpara.i):
     walk=randwalk.direct(setpara.d,setpara.r)
     track[num]=track[num-1]+walk
+    #print(np.linalg.norm(walk))
+    #print(walk)
 track=track.reshape([-1,setpara.d])
 
 #specially to plot 3D track
