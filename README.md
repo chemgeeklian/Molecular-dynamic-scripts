@@ -11,4 +11,4 @@ Considering add my self-writing scripts related to quantum/computing chemistry.
 
 2018/07/13: (?) forgot to update README right after uploading the TDS simulation codes. It is a simulation of reaction rate as a function of temperature, which linearly increase with time.
 
-2018/09/19: simulation of Brownian movement (py script)
+2018/09/19: simulation of Brownian movement (py script): set norm of a walk step and randomly choose a direction in spherical coordinate system. Mover start from original point; next position = current position + walk step.
